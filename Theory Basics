@@ -1,0 +1,61 @@
+JavaScript is an interpreted language, which means that the computer understands it while running it. 
+Some languages get processed beforerunning, this is called compiling, but not JavaScript. The computer can just
+interpret JavaScript on the fly. The "engine" that understands JavaScript will be called the interpreter here.
+When dealing with JavaScript, you will come across the term ECMAScript
+sooner or later. This is the specification or standardization for the JavaScript
+language. The current standard is ECMAScript 6 (also referred to as ES6).
+Browsers use this specification to support JavaScript (in addition to some
+other topics such as Document Object Model (DOM)
+
+console.log('hamza')
+
+Two ways to link JavaScript to a webpage:
+
+Directly in HTML
+Here is an example of how to write a very simple web page that will give a
+pop-up box saying Hi there! :
+<html>
+ <script type="text/javascript">
+ alert("Hi there!");
+ </script>
+</html>
+Then we are going to create a separate HTML file (using the postfix .html
+again). And we are going to give it this content:
+<html>
+ <script type="text/javascript" src="ch1_alert.js"></script>
+</html>
+
+Prompt
+Another thing we would like to show you here is also a command prompt. It
+works very much like an alert, but instead, it takes input from the user. We
+will learn how to store variables very soon, and once you know that, you
+can store the result of this prompt function and do something with it. Go
+// I'm a single line comment
+// console.log("single line comment, not logged");
+/* I'm a multi-line comment. Whatever is between the slash aster
+console.log("I'm not logged, because I'm a comment");
+*/
+ahead and change the alert() to a prompt() in the Hi.html file, for
+example, like this:
+prompt("Hi! How are you?");
+
+Random numbers
+For the purpose of fun exercises in the early chapters of this book, we
+would like you to know how to generate a random number in JavaScript. It
+is absolutely fine if you don't really understand what is going on just yet;
+just know that this is the command to create a random number:
+Math.random();
+We can do it in the console and see the result appear if we log it:
+console.log(Math.random());
+This number will be a decimal between 0 and 1. If we want a number
+between 0 and 100, we can multiply it by 100, like this:
+console.log(Math.random() * 100);
+Don't worry, we will cover mathematic operators in Chapter 2, JavaScript
+Essentials.
+If we don't want to have a decimal result, we can use the Math.floor
+function on it, which is rounding it down to the nearest integer:
+console.log(Math.floor(Math.random() * 100));
+Don't worry about not getting this yet. This will be explained in more detail
+further on in the book. In Chapter 8, Built-In JavaScript Methods, we will
+discuss built-in methods in more detail. Until then, just trust us that this
+does generate a random number between 0 and 100.
